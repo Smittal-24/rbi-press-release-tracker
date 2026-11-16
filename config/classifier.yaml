@@ -1,0 +1,64 @@
+﻿# Title -> item type rules for the RBI Press Releases page.
+#
+# Rules run top to bottom against the normalised title (curly quotes straightened, whitespace
+# collapsed, case-insensitive). The FIRST rule that matches wins. A title that matches no rule,
+# or matches an `exclude` pattern, is not a tracked item.
+#
+# Titles were checked against the live page in Nov 2026. Rules marked "unverified" are built from
+# older RBI wording or the brief and have not yet been seen on the live page: if RBI words them
+# differently, the item is simply not detected, so run `python -m rbi_tracker.cli list` after a
+# release and fix the pattern here (one line) if needed.
+#
+# Decisions: auction results are tracked from the "Full Auction Result(s)" release only (the separate
+# "Cut-off" release is deliberately not tracked). Conversion/Switch and Underwriting auctions are not
+# tracked items.
+
+exclude:
+  - 'conversion/switch'
+  - 'underwriting auction'
+  - 'cut-off$'
+
+rules:
+  # --- Central Government dated securities ---
+  - item_id: cg_announcement
+    patterns: ['^auction of government of india dated securit(y|ies)\b']
+  - item_id: cg_result
+    patterns: ['^government stock\s*-\s*full auction results?$']
+
+  # --- State Government securities (SDLs). Patterns are anchored, so they never clash with CG. ---
+  - item_id: sg_announcement
+    patterns: ['^auction of state government securities']
+  - item_id: sg_result
+    patterns: ['^state government securities\s*-\s*full auction results?$']
+
+  # --- Treasury bills ---
+  - item_id: tbill_announcement
+    patterns: ['^auction of 91-day, 182-day and 364-day treasury bills']
+  - item_id: tbill_result
+    patterns: ['^treasury bills:\s*full auction results?$']
+
+  # --- Open market operations (unverified wording, taken from earlier RBI releases) ---
+  - item_id: omo_announcement
+    patterns: ['announces\s+(omo|open market operations?)\b']
+  - item_id: omo_result
+    patterns: ['^results?\s+of\s+(the\s+)?(omo|open market operations?)\b']
+
+  # --- Variable rate repo / reverse repo (VRRR must be tested: "(VRR)" does not match "(VRRR)") ---
+  - item_id: vrrr_announcement
+    patterns: ['^rbi to conduct .*\(vrrr\) auction', 'announces\s+variable rate reverse repo']
+  - item_id: vrrr_result
+    patterns: ['^results? of the .*\(vrrr\) auction', '^results? of variable rate reverse repo']
+  - item_id: vrr_announcement
+    patterns: ['^rbi to conduct .*\(vrr\) auction', 'announces\s+variable rate repo']
+  - item_id: vrr_result
+    patterns: ['^results? of the .*\(vrr\) auction', '^results? of variable rate repo']
+
+  # --- Publications announced by press release ---
+  - item_id: bop
+    patterns: ["^developments in india's balance of payments"]
+  - item_id: sectoral_credit          # unverified
+    patterns: ['sectoral deployment of bank credit']
+  - item_id: mpc_minutes              # unverified
+    patterns: ['^minutes of the monetary policy committee']
+  - item_id: wss
+    patterns: ['weekly statistical supplement']

@@ -17,5 +17,5 @@ items:
   - {id: bop,                 label: "Balance of Payments",         family: bop,    kind: release,      cadence: "Quarterly",                        source: press_release}
   - {id: sectoral_credit,     label: "Sectoral Deployment of Bank Credit", family: credit, kind: release, cadence: "Monthly (~3-week lag)",         source: press_release}
   - {id: mpc_minutes,         label: "MPC Minutes",                 family: mpc,    kind: release,      cadence: "~14 days after each MPC meeting",  source: press_release}
-  - {id: wss,                 label: "Weekly Statistical Supplement", family: wss,  kind: release,      cadence: "Weekly (Fri)",                     source: dedicated}
+  - {id: wss,                 label: "Weekly Statistical Supplement", family: wss,  kind: release,      cadence: "Weekly (Fri)",                     source: press_release}
   - {id: bulletin,            label: "RBI Bulletin",                family: bulletin, kind: release,    cadence: "Monthly",                          source: dedicated}

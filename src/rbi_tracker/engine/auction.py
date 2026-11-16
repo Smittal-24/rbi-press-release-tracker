@@ -77,6 +77,9 @@ def compare_result(new: Release, prev: Release | None, announcement: Release | N
     d = Diff(new.item_id, new.release_date, prev.release_date if prev else None)
     new_rows = index_rows(new.rows, f"{new.item_id} (new)")
     old_rows = index_rows(prev.rows, f"{prev.item_id} (previous)") if prev else {}
+    # Under-subscription is routine for VRR/VRRR, so it is never a priority flag there
+    # (bid-cover and accepted-vs-notified still show as ordinary changes).
+    strict = family not in ("vrr", "vrrr")
     ann_rows = index_rows(announcement.rows, f"{announcement.item_id}") if announcement else {}
 
     if prev is None:
@@ -100,7 +103,7 @@ def compare_result(new: Release, prev: Release | None, announcement: Release | N
 
         # 2) the result's own red flags
         bc = to_num(row.get("bid_cover"))
-        if bc is not None and bc < 1:
+        if strict and bc is not None and bc < 1:
             add_change(d, "undersubscribed", f"{lab} {key}: bid-cover {fmt(bc)}x is below 1.0x (undersubscribed)",
                        None, bc, key=key, priority=True)
         dev = to_num(row.get("devolvement_amount"))
@@ -127,7 +130,7 @@ def compare_result(new: Release, prev: Release | None, announcement: Release | N
                     d, "accepted_vs_notified",
                     f"{lab} {key}: accepted {fmt(accepted)} vs notified {fmt(notified)} Rs crore "
                     f"({signed(gap)}{pc_txt}) - accepted {verdict} notified ({source})",
-                    notified, accepted, key=key, priority=gap < 0, comparison="announcement")
+                    notified, accepted, key=key, priority=strict and gap < 0, comparison="announcement")
                 c.delta, c.unit, c.pct_change = round(gap, 2), "Rs crore", pc
 
     for key in old_rows:

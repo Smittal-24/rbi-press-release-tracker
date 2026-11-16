@@ -57,17 +57,17 @@ def _sign_swing(c: Change, label_for_balance: bool) -> None:
 
 
 def compare_bop(new: Release, prev: Release | None) -> Diff:
-    """Each figure vs the prior quarter AND vs the same quarter a year ago (prior_year, republished
+    """Each figure vs the prior period AND vs the same period a year ago (prior_year, republished
     in the release itself). Any sign swing is a priority item."""
     d = Diff(new.item_id, new.release_date, prev.release_date if prev else None)
     if prev is None:
-        d.info.append("First recorded Balance of Payments release; no prior quarter to compare against.")
+        d.info.append("First recorded Balance of Payments release; no prior period to compare against.")
     for name, val in new.fields.items():
         if to_num(val) is None:
             continue
         balance_like = "balance" in name or "invisibles" in name
         if prev is not None:
-            c = record(d, name, f"{pretty(name)} vs prior quarter", prev.fields.get(name), val, "level")
+            c = record(d, name, f"{pretty(name)} vs prior period", prev.fields.get(name), val, "level")
             if c:
                 _sign_swing(c, balance_like)
         if name in new.prior_year:

@@ -1,0 +1,21 @@
+# One entry per tracked item type. Announcement and Result are always separate.
+# source: "press_release" = polled on the RBI Press Releases page and classified by title.
+# source: "dedicated"     = has its own page; URL is set in settings.yaml.
+items:
+  - {id: cg_announcement,     label: "CG Auction - Announcement",   family: cg,     kind: announcement, cadence: "Weekly (Fri, for following week)", source: press_release}
+  - {id: cg_result,           label: "CG Auction - Result",         family: cg,     kind: result,       cadence: "Weekly (Fri)",                     source: press_release}
+  - {id: sg_announcement,     label: "SG (SDL) Auction - Announcement", family: sg, kind: announcement, cadence: "Weekly (Fri)",                     source: press_release}
+  - {id: sg_result,           label: "SG (SDL) Auction - Result",   family: sg,     kind: result,       cadence: "Weekly (Tue)",                     source: press_release}
+  - {id: tbill_announcement,  label: "T-Bill Auction - Announcement", family: tbill, kind: announcement, cadence: "Weekly (Fri)",                    source: press_release}
+  - {id: tbill_result,        label: "T-Bill Auction - Result",     family: tbill,  kind: result,       cadence: "Weekly (Wed)",                     source: press_release}
+  - {id: omo_announcement,    label: "OMO - Announcement",          family: omo,    kind: announcement, cadence: "Ad hoc",                           source: press_release}
+  - {id: omo_result,          label: "OMO - Result",                family: omo,    kind: result,       cadence: "Ad hoc (1-2 days after announcement)", source: press_release}
+  - {id: vrr_announcement,    label: "VRR - Announcement",          family: vrr,    kind: announcement, cadence: "Ad hoc (can be frequent)",         source: press_release}
+  - {id: vrr_result,          label: "VRR - Result",                family: vrr,    kind: result,       cadence: "Ad hoc (same day)",                source: press_release}
+  - {id: vrrr_announcement,   label: "VRRR - Announcement",         family: vrrr,   kind: announcement, cadence: "Ad hoc (can be frequent)",         source: press_release}
+  - {id: vrrr_result,         label: "VRRR - Result",               family: vrrr,   kind: result,       cadence: "Ad hoc (same day)",                source: press_release}
+  - {id: bop,                 label: "Balance of Payments",         family: bop,    kind: release,      cadence: "Quarterly",                        source: press_release}
+  - {id: sectoral_credit,     label: "Sectoral Deployment of Bank Credit", family: credit, kind: release, cadence: "Monthly (~3-week lag)",         source: press_release}
+  - {id: mpc_minutes,         label: "MPC Minutes",                 family: mpc,    kind: release,      cadence: "~14 days after each MPC meeting",  source: press_release}
+  - {id: wss,                 label: "Weekly Statistical Supplement", family: wss,  kind: release,      cadence: "Weekly (Fri)",                     source: dedicated}
+  - {id: bulletin,            label: "RBI Bulletin",                family: bulletin, kind: release,    cadence: "Monthly",                          source: dedicated}

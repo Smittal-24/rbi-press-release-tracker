@@ -1,0 +1,12 @@
+﻿requests
+beautifulsoup4
+lxml
+pdfplumber
+pyyaml
+python-dateutil
+openpyxl
+pandas
+streamlit
+python-docx
+reportlab
+anthropic

@@ -1,0 +1,15 @@
+﻿timezone: Asia/Kolkata
+schedule:
+  local_time: "17:15"          # once a day, IST
+  cron_utc: "45 11 * * *"      # same time in UTC, for GitHub Actions
+
+sources:
+  press_releases_url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx"
+  # To be confirmed in Step 3 (RBI reorganizes its site; keep URLs here, never inline in code)
+  wss_url: null
+  bulletin_url: null
+
+# Secrets are NOT stored here. They come from environment variables / GitHub Secrets / Streamlit Secrets:
+#   GOOGLE_CHAT_WEBHOOK_URL
+#   ANTHROPIC_API_KEY
+#   DASHBOARD_URL (optional, used for links in Chat messages)

@@ -1,0 +1,228 @@
+{
+ "prid": "63989",
+ "release": {
+  "item_id": "sg_result",
+  "release_date": "2026-11-17",
+  "reference": "Press Release: 2026-2027/1511",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63989",
+  "fields": {
+   "detail": [
+    {
+     "security": "ANDHRA PRADESH SGS 2051",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 2420.0,
+     "accepted_amount": 949.671,
+     "cutoff_yield": 8.128,
+     "wtd_avg_yield": 8.1192,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "GOA SGS 2037*",
+     "notified_amount": 100.0,
+     "bids_received_amount": 720.0,
+     "accepted_amount": null,
+     "cutoff_yield": null,
+     "wtd_avg_yield": null,
+     "total_allotment_amount": 0.0
+    },
+    {
+     "security": "KARNATAKA SGS 2034",
+     "notified_amount": 2000.0,
+     "bids_received_amount": 5030.0,
+     "accepted_amount": 1894.526,
+     "cutoff_yield": 7.89,
+     "wtd_avg_yield": 7.8686,
+     "total_allotment_amount": 2000.0
+    },
+    {
+     "security": "MADHYA PRADESH SGS 2030",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 1845.0,
+     "accepted_amount": 968.236,
+     "cutoff_yield": 7.6892,
+     "wtd_avg_yield": 7.6623,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "MADHYA PRADESH SGS 2038",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 6690.0,
+     "accepted_amount": 954.491,
+     "cutoff_yield": 8.0537,
+     "wtd_avg_yield": 8.0428,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "MADHYA PRADESH SGS 2048",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 3610.0,
+     "accepted_amount": 931.181,
+     "cutoff_yield": 8.1404,
+     "wtd_avg_yield": 8.1209,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "MAHARASHTRA SGS 2034",
+     "notified_amount": 2000.0,
+     "bids_received_amount": 4805.0,
+     "accepted_amount": 1870.25,
+     "cutoff_yield": 7.89,
+     "wtd_avg_yield": 7.868,
+     "total_allotment_amount": 2000.0
+    },
+    {
+     "security": "MAHARASHTRA SGS 2041",
+     "notified_amount": 3000.0,
+     "bids_received_amount": 14621.761,
+     "accepted_amount": 2700.0,
+     "cutoff_yield": 8.0898,
+     "wtd_avg_yield": 8.0805,
+     "total_allotment_amount": 3000.0
+    },
+    {
+     "security": "MAHARASHTRA SGS 2044",
+     "notified_amount": 2000.0,
+     "bids_received_amount": 6475.0,
+     "accepted_amount": 1806.651,
+     "cutoff_yield": 8.13,
+     "wtd_avg_yield": 8.1188,
+     "total_allotment_amount": 2000.0
+    },
+    {
+     "security": "MAHARASHTRA SGS 2054",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 4069.0,
+     "accepted_amount": 958.489,
+     "cutoff_yield": 8.1072,
+     "wtd_avg_yield": 8.1063,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "PUNJAB SGS 2035",
+     "notified_amount": 500.0,
+     "bids_received_amount": 1770.0,
+     "accepted_amount": 494.907,
+     "cutoff_yield": 7.9488,
+     "wtd_avg_yield": 7.9488,
+     "total_allotment_amount": 500.0
+    },
+    {
+     "security": "PUNJAB SGS 2046",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 4350.0,
+     "accepted_amount": 926.363,
+     "cutoff_yield": 8.14,
+     "wtd_avg_yield": 8.1154,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "RAJASTHAN SGS 2036",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 3186.88,
+     "accepted_amount": 912.737,
+     "cutoff_yield": 7.95,
+     "wtd_avg_yield": 7.9309,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "RAJASTHAN SGS 2042",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 2595.0,
+     "accepted_amount": 900.0,
+     "cutoff_yield": 8.1496,
+     "wtd_avg_yield": 8.1304,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "RAJASTHAN SGS 2052",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 3385.0,
+     "accepted_amount": 900.0,
+     "cutoff_yield": 8.12,
+     "wtd_avg_yield": 8.1144,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "TELANGANA SGS 2039",
+     "notified_amount": 500.0,
+     "bids_received_amount": 2479.735,
+     "accepted_amount": 476.411,
+     "cutoff_yield": 8.0596,
+     "wtd_avg_yield": 8.0569,
+     "total_allotment_amount": 500.0
+    },
+    {
+     "security": "TELANGANA SGS 2049",
+     "notified_amount": 500.0,
+     "bids_received_amount": 2530.0,
+     "accepted_amount": 489.807,
+     "cutoff_yield": 8.1275,
+     "wtd_avg_yield": 8.1144,
+     "total_allotment_amount": 500.0
+    },
+    {
+     "security": "TRIPURA SGS 2034",
+     "notified_amount": 200.0,
+     "bids_received_amount": 575.0,
+     "accepted_amount": 199.93,
+     "cutoff_yield": 8.0006,
+     "wtd_avg_yield": 7.9903,
+     "total_allotment_amount": 200.0
+    },
+    {
+     "security": "TRIPURA SGS 2050",
+     "notified_amount": 500.0,
+     "bids_received_amount": 2595.0,
+     "accepted_amount": 474.238,
+     "cutoff_yield": 8.0882,
+     "wtd_avg_yield": 8.0882,
+     "total_allotment_amount": 500.0
+    },
+    {
+     "security": "WEST BENGAL SGS 2031",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 1285.0,
+     "accepted_amount": 988.862,
+     "cutoff_yield": 7.8372,
+     "wtd_avg_yield": 7.8106,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "WEST BENGAL SGS 2044",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 4230.0,
+     "accepted_amount": 942.431,
+     "cutoff_yield": 8.0873,
+     "wtd_avg_yield": 8.0873,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "WEST BENGAL SGS 2052",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 3707.0,
+     "accepted_amount": 997.474,
+     "cutoff_yield": 8.1199,
+     "wtd_avg_yield": 8.1101,
+     "total_allotment_amount": 1000.0
+    }
+   ]
+  },
+  "rows": [
+   {
+    "key": "ALL",
+    "security": "All State Government securities",
+    "notified_amount": 23300.0,
+    "bids_received_amount": 82974.376,
+    "accepted_amount": 21736.655,
+    "total_allotment_amount": 23200.0,
+    "cutoff_yield": 8.0296,
+    "bid_cover": 3.56,
+    "derived": [
+     "cutoff_yield",
+     "bid_cover"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

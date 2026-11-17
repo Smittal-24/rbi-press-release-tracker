@@ -96,6 +96,58 @@ def cmd_test_webhook(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_repost(args: argparse.Namespace) -> int:
+    """Post saved releases to Google Chat again, in the current message format. Uses saved data only:
+    nothing is fetched from RBI and no status is changed. --list shows what is saved."""
+    from .engine import compare
+    from .notify.gchat import GChatPoster, PostError, PrintPoster, format_release
+    from .paths import DATA_DIR, INDEX_FILE, load_yaml
+    from .store.archive import ReleaseArchive
+    from .store.records import PressReleaseStore
+
+    store = PressReleaseStore.load(INDEX_FILE)
+    archive = ReleaseArchive(DATA_DIR / "releases")
+    if args.list:
+        for r in sorted(store.records.values(), key=lambda r: (r["release_date"], int(r["prid"]))):
+            print(f"{r['prid']:>6}  {r['release_date']}  {r['item_id']:<20} {r.get('status', 'new'):<15} {r['title'][:55]}")
+        print(f"\n{len(store.records)} tracked releases recorded.")
+        return 0
+    if not args.prids:
+        print("ERROR: give one or more press release ids (see: repost --list)", file=sys.stderr)
+        return 2
+    try:
+        poster = PrintPoster() if args.dry_run else GChatPoster()
+    except PostError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return 2
+    labels = {i["id"]: i["label"] for i in load_yaml("items.yaml")["items"]}
+    failures = 0
+    for prid in args.prids:
+        rec = store.records.get(prid)
+        if rec is None:
+            print(f"{prid}: not a tracked release in the store", file=sys.stderr)
+            failures += 1
+            continue
+        found = [r for p, r in archive.load_all(rec["item_id"]) if p == prid]
+        if not found:
+            print(f"{prid}: no saved data for this release yet (the daily job has not extracted it)", file=sys.stderr)
+            failures += 1
+            continue
+        release = found[0]
+        previous = archive.previous(rec["item_id"], release.release_date, prid)
+        diff = compare(release, previous, archive.matching_announcement(rec["item_id"], release.release_date, prid))
+        text = "(Re-posted in the updated format)\n" + format_release(
+            labels.get(rec["item_id"], rec["item_id"]), release, diff, rec["detail_url"], previous)
+        try:
+            poster.post(text)
+        except PostError as e:
+            print(f"{prid}: FAILED - {e}", file=sys.stderr)
+            failures += 1
+            continue
+        print(f"{prid}: {'previewed' if args.dry_run else 'reposted'} ({rec['item_id']}, {rec['release_date']})")
+    return 1 if failures else 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="rbi_tracker")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -114,6 +166,11 @@ def main(argv: list[str] | None = None) -> int:
     rn.set_defaults(func=cmd_run)
     tw = sub.add_parser("test-webhook", help="send one test message to Google Chat")
     tw.set_defaults(func=cmd_test_webhook)
+    rp = sub.add_parser("repost", help="post saved releases to Google Chat again in the current format")
+    rp.add_argument("prids", nargs="*", help="press release ids to repost")
+    rp.add_argument("--list", action="store_true", help="list the releases saved so far, with their ids")
+    rp.add_argument("--dry-run", action="store_true", help="print the messages instead of posting")
+    rp.set_defaults(func=cmd_repost)
     args = p.parse_args(argv)
     return args.func(args)
 

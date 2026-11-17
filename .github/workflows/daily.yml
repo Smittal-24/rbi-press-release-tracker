@@ -2,7 +2,8 @@ name: RBI tracker daily
 
 on:
   schedule:
-    - cron: "45 11 * * *"        # 11:45 UTC = 17:15 IST
+    - cron: "0 10 * * *"         # 10:00 UTC = 15:30 IST (afternoon check)
+    - cron: "45 11 * * *"        # 11:45 UTC = 17:15 IST (end-of-day check)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -32,6 +33,7 @@ jobs:
         env:
           PYTHONPATH: src
           GCHAT_WEBHOOK_URL: ${{ secrets.GCHAT_WEBHOOK_URL }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             python -m rbi_tracker.cli run --dry-run

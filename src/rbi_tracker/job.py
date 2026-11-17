@@ -26,6 +26,7 @@ from .store.workbook import Workbook
 
 IST = timezone(timedelta(hours=5, minutes=30))     # India has no daylight saving: a fixed offset is exact
 MAX_ATTEMPTS = 3
+EVENING_SCHEDULE = "45 11 * * *"     # the 5:15 PM IST run (11:45 UTC): the only one that posts the quiet line
 RETRY = ("extract_failed", "post_failed")
 
 
@@ -63,7 +64,7 @@ def sync_workbook(store: PressReleaseStore, archive: ReleaseArchive, workbook: W
 
 def run_job(*, store: PressReleaseStore, archive: ReleaseArchive, listing_fn: Callable, detail_fn: Callable,
             poster, today: date, bootstrap_days: int = 7, pause: float = 0.0, save: bool = True,
-            workbook: Workbook | None = None, trigger: str = "manual") -> JobResult:
+            workbook: Workbook | None = None, trigger: str = "manual", quiet_line: bool = True) -> JobResult:
     res = JobResult()
     labels = {i["id"]: i["label"] for i in load_yaml("items.yaml")["items"]}
 
@@ -141,13 +142,16 @@ def run_job(*, store: PressReleaseStore, archive: ReleaseArchive, listing_fn: Ca
             if workbook is not None:
                 wb(workbook.log_changes, diff, release, label, prid)
             rec["status"] = "posted"
+            rec["posted_at"] = datetime.now(IST).isoformat(timespec="seconds")
+            rec["posted_on"] = today.isoformat()
             res.posted += 1
         else:
             rec["attempts"] = rec.get("attempts", 0) + 1
             rec["status"] = "post_failed"
             res.failed += 1
 
-    if res.posted == 0 and res.failed == 0:
+    posted_today = any(r.get("posted_on") == today.isoformat() for r in store.records.values())
+    if quiet_line and res.posted == 0 and res.failed == 0 and not posted_today:
         send(gchat.format_quiet(today.isoformat()), kind="no-new-releases")
     if save:
         store.save()

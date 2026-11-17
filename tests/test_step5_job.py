@@ -61,8 +61,8 @@ def test_first_run_posts_only_last_7_days_and_diffs_against_baseline(tmp_path):
 def test_second_run_with_nothing_new_posts_quiet_line(tmp_path):
     s, a, _ = go(tmp_path, [E_NEW, E_OLD], FakePoster())
     p2 = FakePoster()
-    _, _, r = go(tmp_path, [E_NEW, E_OLD], p2, s, a)
-    assert r.posted == 0 and p2.sent == [gchat.format_quiet("2026-11-16")]
+    _, _, r = go(tmp_path, [E_NEW, E_OLD], p2, s, a, today=date(2026, 11, 17))   # next day: nothing posted that day
+    assert r.posted == 0 and p2.sent == [gchat.format_quiet("2026-11-17")]
 
 
 def test_new_release_on_later_run_posts_once(tmp_path):

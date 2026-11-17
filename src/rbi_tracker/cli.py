@@ -68,7 +68,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     from datetime import datetime
 
     from .fetch.detail import fetch_detail_html
-    from .job import IST, run_job, sync_workbook
+    from .job import EVENING_SCHEDULE, IST, run_job, sync_workbook
     from .notify.gchat import GChatPoster, PostError, PrintPoster
     from .paths import DATA_DIR, INDEX_FILE
     from .store.archive import ReleaseArchive
@@ -84,12 +84,14 @@ def cmd_run(args: argparse.Namespace) -> int:
     archive = ReleaseArchive(DATA_DIR / "releases", dry_run=args.dry_run)
     workbook = Workbook(DATA_DIR / "RBI_Tracker.xlsx", dry_run=args.dry_run)
     trigger = {"schedule": "scheduled"}.get(os.environ.get("GITHUB_EVENT_NAME", ""), "manual")
+    schedule = os.environ.get("EVENT_SCHEDULE", "")          # set by the workflow for scheduled runs
+    quiet_line = not schedule or schedule == EVENING_SCHEDULE  # the earlier scheduled run stays silent
     added, _ = sync_workbook(store, archive, workbook)      # one-off catch-up for releases saved before the workbook
     if added:
         print(f"Workbook catch-up: added {added} earlier release(s) to the Release Log.")
     res = run_job(store=store, archive=archive, listing_fn=fetch_listing, detail_fn=fetch_detail_html,
                   poster=poster, today=datetime.now(IST).date(), bootstrap_days=args.bootstrap_days,
-                  pause=1.0, save=not args.dry_run, workbook=workbook, trigger=trigger)
+                  pause=1.0, save=not args.dry_run, workbook=workbook, trigger=trigger, quiet_line=quiet_line)
     print(f"\nposted {res.posted}, baseline {res.baseline}, failed {res.failed}, "
           f"listing {'ok' if res.listing_ok else 'FAILED'}{' (dry run: nothing saved)' if args.dry_run else ''}")
     return 0 if res.ok else 1

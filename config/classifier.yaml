@@ -41,7 +41,7 @@ rules:
   - item_id: omo_announcement
     patterns: ['announces\s+(omo|open market operations?)\b']
   - item_id: omo_result
-    patterns: ['^results?\s+of\s+(the\s+)?(omo|open market operations?)\b']
+    patterns: ['^results?\s+of\s+(the\s+)?(omo|open market operations?)\b', '^detailed results?:\s*omo\b']
 
   # --- Variable rate repo / reverse repo (VRRR must be tested: "(VRR)" does not match "(VRRR)") ---
   - item_id: vrrr_announcement

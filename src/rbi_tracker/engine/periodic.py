@@ -1,6 +1,8 @@
 ﻿"""WSS, RBI Bulletin, Balance of Payments and Sectoral Deployment of Bank Credit (brief section 6)."""
 from __future__ import annotations
 
+import re
+
 from .models import Change, Diff, Release
 from .utils import add_change, index_rows, pretty, record, to_num
 
@@ -56,17 +58,42 @@ def _sign_swing(c: Change, label_for_balance: bool) -> None:
     c.note += f" [SIGN SWING: {word}]"
 
 
+_MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september",
+           "october", "november", "december"]
+
+
+def _ytd_start(period):
+    """'April-September 2026' -> (2026, 4): the month and year the cumulative window starts.
+    Two year-to-date windows are only comparable when they start in the same month and year."""
+    m = re.match(r"\s*([A-Za-z]+)\s*-\s*([A-Za-z]+)\s+(\d{4})\s*$", str(period or ""))
+    if not m:
+        return None
+    try:
+        s = _MONTHS.index(m.group(1).lower()) + 1
+        e = _MONTHS.index(m.group(2).lower()) + 1
+    except ValueError:
+        return None
+    end_year = int(m.group(3))
+    return (end_year if e >= s else end_year - 1, s)
+
+
 def compare_bop(new: Release, prev: Release | None) -> Diff:
     """Each figure vs the prior period AND vs the same period a year ago (prior_year, republished
     in the release itself). Any sign swing is a priority item."""
     d = Diff(new.item_id, new.release_date, prev.release_date if prev else None)
     if prev is None:
         d.info.append("First recorded Balance of Payments release; no prior period to compare against.")
+    ytd_comparable = prev is not None and _ytd_start(new.fields.get("ytd_period")) is not None \
+        and _ytd_start(new.fields.get("ytd_period")) == _ytd_start(prev.fields.get("ytd_period"))
+    if prev is not None and not ytd_comparable:
+        d.info.append("Year-to-date figures not compared with the prior release: the year-to-date window differs "
+                      f"({prev.fields.get('ytd_period')} vs {new.fields.get('ytd_period')}); "
+                      "they are still compared with the same period a year ago.")
     for name, val in new.fields.items():
         if to_num(val) is None:
             continue
         balance_like = "balance" in name or "invisibles" in name
-        if prev is not None:
+        if prev is not None and (ytd_comparable or not name.startswith("ytd_")):
             c = record(d, name, f"{pretty(name)} vs prior period", prev.fields.get(name), val, "level")
             if c:
                 _sign_swing(c, balance_like)

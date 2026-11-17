@@ -116,6 +116,9 @@ def compare_result(new: Release, prev: Release | None, announcement: Release | N
         notified = to_num(arow.get("notified_amount")) if arow else to_num(row.get("notified_amount"))
         source = "announcement" if arow else "result"
         accepted = to_num(row.get("accepted_amount"))
+        # T-Bill notified amounts cover competitive + non-competitive allotment, so judge the total
+        if family == "tbill" and to_num(row.get("total_allotment_amount")) is not None:
+            accepted = to_num(row.get("total_allotment_amount"))
         if announcement is not None and arow is None:
             d.info.append(f"{lab} {key}: not found in the matching announcement")
         if notified is not None and accepted is not None:

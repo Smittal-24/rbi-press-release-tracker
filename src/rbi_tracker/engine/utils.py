@@ -26,6 +26,8 @@ def to_num(x: Any) -> float | None:
 
 
 def pretty(name: str) -> str:
+    if name.startswith("ytd_"):
+        return pretty(name[4:]) + " (year to date)"
     return name.replace("_", " ")
 
 

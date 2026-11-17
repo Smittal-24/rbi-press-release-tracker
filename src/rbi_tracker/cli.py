@@ -59,6 +59,43 @@ def cmd_capture(args: argparse.Namespace) -> int:
     return 1 if failures else 0
 
 
+def cmd_run(args: argparse.Namespace) -> int:
+    """The daily job. --dry-run prints the messages and writes nothing."""
+    from datetime import datetime
+
+    from .fetch.detail import fetch_detail_html
+    from .job import IST, run_job
+    from .notify.gchat import GChatPoster, PostError, PrintPoster
+    from .paths import DATA_DIR, INDEX_FILE
+    from .store.archive import ReleaseArchive
+    from .store.records import PressReleaseStore
+
+    try:
+        poster = PrintPoster() if args.dry_run else GChatPoster()
+    except PostError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return 2
+    store = PressReleaseStore.load(INDEX_FILE)
+    archive = ReleaseArchive(DATA_DIR / "releases", dry_run=args.dry_run)
+    res = run_job(store=store, archive=archive, listing_fn=fetch_listing, detail_fn=fetch_detail_html,
+                  poster=poster, today=datetime.now(IST).date(), bootstrap_days=args.bootstrap_days,
+                  pause=1.0, save=not args.dry_run)
+    print(f"\nposted {res.posted}, baseline {res.baseline}, failed {res.failed}, "
+          f"listing {'ok' if res.listing_ok else 'FAILED'}{' (dry run: nothing saved)' if args.dry_run else ''}")
+    return 0 if res.ok else 1
+
+
+def cmd_test_webhook(args: argparse.Namespace) -> int:
+    from .notify.gchat import GChatPoster, PostError
+    try:
+        GChatPoster().post("RBI tracker: webhook test message. If you can read this, Google Chat is connected.")
+    except PostError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return 1
+    print("Test message sent.")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="rbi_tracker")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -70,6 +107,13 @@ def main(argv: list[str] | None = None) -> int:
     cp.add_argument("prids", nargs="+", help="press release ids (prid) to capture")
     cp.add_argument("--out", help="output folder (default tests/fixtures/rbi)")
     cp.set_defaults(func=cmd_capture)
+    rn = sub.add_parser("run", help="the daily job: detect new releases, extract, diff, post to Google Chat")
+    rn.add_argument("--dry-run", action="store_true", help="print messages instead of posting; save nothing")
+    rn.add_argument("--bootstrap-days", type=int, default=7,
+                    help="first run only: post releases from the last N days, record older ones silently")
+    rn.set_defaults(func=cmd_run)
+    tw = sub.add_parser("test-webhook", help="send one test message to Google Chat")
+    tw.set_defaults(func=cmd_test_webhook)
     args = p.parse_args(argv)
     return args.func(args)
 

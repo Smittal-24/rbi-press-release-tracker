@@ -10,17 +10,11 @@ def tb(date, notified, accepted, total):
          "cutoff_yield": 5.8, "bid_cover": 3.0}], {})
 
 
-def test_tbill_total_allotment_is_judged_against_notified():
-    # competitive 7,600 < notified 8,000 but total allotment 8,600 > notified: not under-accepted
-    d = compare(tb("2026-11-11", 8000, 7600, 8600), tb("2026-11-04", 8000, 8000, 8000), None)
-    flags = [c for c in d.changes if c.metric == "accepted_vs_notified"]
-    assert flags and not flags[0].priority and "above notified" in flags[0].note
-
-
-def test_tbill_total_below_notified_is_priority():
-    d = compare(tb("2026-11-11", 8000, 7000, 7500), None, None)
-    flags = [c for c in d.changes if c.metric == "accepted_vs_notified"]
-    assert flags and flags[0].priority
+def test_tbill_notified_vs_accepted_is_not_judged():
+    # 91D: competitive 7,600 vs notified 8,000, non-competitive 11,600, total 19,200: no accepted-vs-notified line at all
+    ann = Release("tbill_announcement", "2026-11-10", "ref", "", {}, [{"key": "91D", "notified_amount": 8000}], {})
+    d = compare(tb("2026-11-11", 8000, 7600, 19200), tb("2026-11-04", 8000, 8000, 8000), ann)
+    assert not [c for c in d.changes if c.metric == "accepted_vs_notified"]
 
 
 def bop(period, ytd, ca, ytd_ca):

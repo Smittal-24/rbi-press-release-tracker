@@ -98,9 +98,9 @@ def run_job(*, store: PressReleaseStore, archive: ReleaseArchive, listing_fn: Ca
             rec["status"] = "baseline"
             res.baseline += 1
             continue
-        diff = compare(release, archive.previous(item_id, release.release_date, prid),
-                       archive.matching_announcement(item_id, release.release_date, prid))
-        if send(gchat.format_release(label, release, diff, rec["detail_url"])):
+        previous = archive.previous(item_id, release.release_date, prid)
+        diff = compare(release, previous, archive.matching_announcement(item_id, release.release_date, prid))
+        if send(gchat.format_release(label, release, diff, rec["detail_url"], previous)):
             rec["status"] = "posted"
             res.posted += 1
         else:

@@ -88,9 +88,9 @@ def test_result_fully_accepted_is_unchanged_not_flagged():
 
 
 def test_accepted_above_notified_is_noted_but_not_priority():
-    ann = rel("tbill_announcement", "2026-11-10", rows=[{"key": "91D", "notified_amount": 8000}])
-    res = rel("tbill_result", "2026-11-11", rows=[{"key": "91D", "accepted_amount": 8500, "bid_cover": 3.0}])
-    c = find(compare(res, None, announcement=ann), "accepted_vs_notified", "91D")[0]
+    ann = rel("cg_announcement", "2026-11-10", rows=[{"key": "10Y", "notified_amount": 8000}])
+    res = rel("cg_result", "2026-11-11", rows=[{"key": "10Y", "accepted_amount": 8500, "bid_cover": 3.0}])
+    c = find(compare(res, None, announcement=ann), "accepted_vs_notified", "10Y")[0]
     assert c.delta == 500 and not c.priority
 
 

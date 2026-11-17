@@ -1,0 +1,59 @@
+{
+ "prid": "63937",
+ "release": {
+  "item_id": "cg_result",
+  "release_date": "2026-11-06",
+  "reference": "Press Release: 2026-2027/1459",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63937",
+  "fields": {},
+  "rows": [
+   {
+    "key": "15Y",
+    "security": "7.06% GS 2041",
+    "bucket_approx": true,
+    "notified_amount": 23000.0,
+    "bids_received_number": 387.0,
+    "bids_received_amount": 52879.8,
+    "accepted_number": 144.0,
+    "accepted_amount": 22919.964,
+    "noncomp_received_amount": 80.036,
+    "noncomp_accepted_amount": 80.036,
+    "total_allotment_amount": 23000.0,
+    "cutoff_price": 97.07,
+    "cutoff_yield": 7.3881,
+    "wtd_avg_price": 97.11,
+    "wtd_avg_yield": 7.3835,
+    "devolvement_amount": 0.0,
+    "bid_cover": 2.3,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "50Y",
+    "security": "7.43% GS 2076",
+    "bucket_approx": true,
+    "notified_amount": 13000.0,
+    "bids_received_number": 144.0,
+    "bids_received_amount": 20751.0,
+    "accepted_number": 107.0,
+    "accepted_amount": 12991.893,
+    "noncomp_received_amount": 8.107,
+    "noncomp_accepted_amount": 8.107,
+    "total_allotment_amount": 13000.0,
+    "cutoff_price": 95.7,
+    "cutoff_yield": 7.7708,
+    "wtd_avg_price": 96.07,
+    "wtd_avg_yield": 7.7403,
+    "devolvement_amount": 0.0,
+    "bid_cover": 1.6,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

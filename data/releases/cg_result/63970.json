@@ -1,0 +1,36 @@
+{
+ "prid": "63970",
+ "release": {
+  "item_id": "cg_result",
+  "release_date": "2026-11-13",
+  "reference": "Press Release: 2026-2027/1492",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63970",
+  "fields": {},
+  "rows": [
+   {
+    "key": "9Y",
+    "security": "6.94% GS 2036",
+    "bucket_approx": false,
+    "notified_amount": 34000.0,
+    "bids_received_number": 349.0,
+    "bids_received_amount": 73016.6,
+    "accepted_number": 146.0,
+    "accepted_amount": 33947.718,
+    "noncomp_received_amount": 52.282,
+    "noncomp_accepted_amount": 52.282,
+    "total_allotment_amount": 34000.0,
+    "cutoff_price": 97.43,
+    "cutoff_yield": 7.3203,
+    "wtd_avg_price": 97.46,
+    "wtd_avg_yield": 7.3158,
+    "devolvement_amount": 0.0,
+    "bid_cover": 2.15,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

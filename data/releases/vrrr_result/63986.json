@@ -1,0 +1,25 @@
+{
+ "prid": "63986",
+ "release": {
+  "item_id": "vrrr_result",
+  "release_date": "2026-11-17",
+  "reference": "Press Release: 2026-2027/1508",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63986",
+  "fields": {},
+  "rows": [
+   {
+    "key": "2D",
+    "notified_amount": 50000.0,
+    "bids_received_amount": 7627.0,
+    "accepted_amount": 7627.0,
+    "cutoff_rate": 5.49,
+    "wtd_avg_rate": 5.49,
+    "bid_cover": 0.15,
+    "derived": [
+     "bid_cover"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

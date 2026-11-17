@@ -1,0 +1,154 @@
+{
+ "prid": "63976",
+ "release": {
+  "item_id": "sg_announcement",
+  "release_date": "2026-11-13",
+  "reference": "Press Release: 2026-2027/1498",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63976",
+  "fields": {
+   "total_notified_amount": 23300.0,
+   "detail": [
+    {
+     "state": "Andhra Pradesh",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.68% Andhra Pradesh SGS 2051, issued on July 29, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Goa",
+     "amount": 100.0,
+     "tenor": "Re-issue of 7.80% Goa SGS 2037, issued on September 16, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Karnataka",
+     "amount": 2000.0,
+     "tenor": "08",
+     "type": "Yield"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.77% Madhya Pradesh SGS 2030, issued on October 21, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.58% Madhya Pradesh SGS 2038, issued on July 22, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.66% Madhya Pradesh SGS 2048, issued on August 19, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Maharashtra",
+     "amount": 2000.0,
+     "tenor": "08",
+     "type": "Yield"
+    },
+    {
+     "state": "Maharashtra",
+     "amount": 3000.0,
+     "tenor": "Re-issue of 8.14% Maharashtra SGS 2041, issued on October 21, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Maharashtra",
+     "amount": 2000.0,
+     "tenor": "18",
+     "type": "Yield"
+    },
+    {
+     "state": "Maharashtra",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.79% Maharashtra SGS 2054, issued on April 22, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Punjab",
+     "amount": 500.0,
+     "tenor": "Re-issue of 7.75% Punjab SGS 2035, issued on September 09, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Punjab",
+     "amount": 1000.0,
+     "tenor": "20",
+     "type": "Yield"
+    },
+    {
+     "state": "Rajasthan",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 8.04% Rajasthan SGS 2036, issued on October 21, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Rajasthan",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 8.23% Rajasthan SGS 2042, issued on October 21, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Rajasthan",
+     "amount": 1000.0,
+     "tenor": "26",
+     "type": "Yield"
+    },
+    {
+     "state": "Telangana",
+     "amount": 500.0,
+     "tenor": "Re-issue of 7.53% Telangana SGS 2039, issued on July 01, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Telangana",
+     "amount": 500.0,
+     "tenor": "Re-issue of 7.65% Telangana SGS 2049, issued on July 01, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Tripura",
+     "amount": 200.0,
+     "tenor": "Re-issue of 8.03% Tripura SGS 2034, issued on October 21, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Tripura",
+     "amount": 500.0,
+     "tenor": "Re-issue of 8.19% Tripura SGS 2050, issued on October 21, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "West Bengal",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.07% West Bengal SGS 2031, issued on July 08, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "West Bengal",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.64% West Bengal SGS 2044, issued on July 08, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "West Bengal",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.65% West Bengal SGS 2052, issued on July 08, 2026",
+     "type": "Price"
+    }
+   ]
+  },
+  "rows": [
+   {
+    "key": "ALL",
+    "security": "All State Government securities",
+    "notified_amount": 23300.0
+   }
+  ],
+  "prior_year": {}
+ }
+}

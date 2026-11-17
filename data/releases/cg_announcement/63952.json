@@ -1,0 +1,24 @@
+{
+ "prid": "63952",
+ "release": {
+  "item_id": "cg_announcement",
+  "release_date": "2026-11-09",
+  "reference": "Press Release: 2026-2027/1474",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63952",
+  "fields": {
+   "auction_date": "2026-11-13",
+   "settlement_date": "2026-11-16",
+   "total_notified_amount": 34000.0
+  },
+  "rows": [
+   {
+    "key": "9Y",
+    "security": "6.94% GS 2036",
+    "maturity_date": "2036-05-11",
+    "notified_amount": 34000.0,
+    "bucket_approx": false
+   }
+  ],
+  "prior_year": {}
+ }
+}

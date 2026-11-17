@@ -116,6 +116,9 @@ def compare_result(new: Release, prev: Release | None, announcement: Release | N
         notified = to_num(arow.get("notified_amount")) if arow else to_num(row.get("notified_amount"))
         source = "announcement" if arow else "result"
         accepted = to_num(row.get("accepted_amount"))
+        what = "accepted"
+        if family in ("cg", "sg") and to_num(row.get("total_allotment_amount")) is not None:
+            accepted, what = to_num(row.get("total_allotment_amount")), "total allotment"
         if family == "tbill":
             continue    # T-Bills: notified vs accepted is deliberately not judged (shown in the table instead)
         if announcement is not None and arow is None:
@@ -123,15 +126,15 @@ def compare_result(new: Release, prev: Release | None, announcement: Release | N
         if notified is not None and accepted is not None:
             gap = accepted - notified
             if abs(gap) < EPS:
-                d.unchanged.append(f"{lab} {key} accepted = notified")
+                d.unchanged.append(f"{lab} {key} {what} = notified")
             else:
                 pc = pct_change(notified, accepted)
                 pc_txt = f", {signed(pc, 1)}%" if pc is not None else ""
                 verdict = "below" if gap < 0 else "above"
                 c = add_change(
                     d, "accepted_vs_notified",
-                    f"{lab} {key}: accepted {fmt(accepted)} vs notified {fmt(notified)} Rs crore "
-                    f"({signed(gap)}{pc_txt}) - accepted {verdict} notified ({source})",
+                    f"{lab} {key}: {what} {fmt(accepted)} vs notified {fmt(notified)} Rs crore "
+                    f"({signed(gap)}{pc_txt}) - {what} {verdict} notified ({source})",
                     notified, accepted, key=key, priority=strict and gap < 0, comparison="announcement")
                 c.delta, c.unit, c.pct_change = round(gap, 2), "Rs crore", pc
 

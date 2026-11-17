@@ -1,15 +1,19 @@
-﻿"""Command line helpers.
+"""Command line helpers.
 
     python -m rbi_tracker.cli list                 # fetch the live page, show how each release classifies
     python -m rbi_tracker.cli list --all           # also show releases that are not tracked
     python -m rbi_tracker.cli list --file page.html  # use a saved copy of the page instead of the network
     python -m rbi_tracker.cli capture 63970 63983  # save cleaned copies of real releases as test fixtures
+    python -m rbi_tracker.cli run [--dry-run]      # the daily job
+    python -m rbi_tracker.cli repost --list | <prid> ...   # post saved releases again in the current format
+    python -m rbi_tracker.cli sync-workbook        # add already-processed releases to the Excel workbook
 
 `list` never writes anything. `capture` writes only tests/fixtures/rbi/<prid>.html.
 """
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import time
 from pathlib import Path
@@ -64,11 +68,12 @@ def cmd_run(args: argparse.Namespace) -> int:
     from datetime import datetime
 
     from .fetch.detail import fetch_detail_html
-    from .job import IST, run_job
+    from .job import IST, run_job, sync_workbook
     from .notify.gchat import GChatPoster, PostError, PrintPoster
     from .paths import DATA_DIR, INDEX_FILE
     from .store.archive import ReleaseArchive
     from .store.records import PressReleaseStore
+    from .store.workbook import Workbook
 
     try:
         poster = PrintPoster() if args.dry_run else GChatPoster()
@@ -77,9 +82,14 @@ def cmd_run(args: argparse.Namespace) -> int:
         return 2
     store = PressReleaseStore.load(INDEX_FILE)
     archive = ReleaseArchive(DATA_DIR / "releases", dry_run=args.dry_run)
+    workbook = Workbook(DATA_DIR / "RBI_Tracker.xlsx", dry_run=args.dry_run)
+    trigger = {"schedule": "scheduled"}.get(os.environ.get("GITHUB_EVENT_NAME", ""), "manual")
+    added, _ = sync_workbook(store, archive, workbook)      # one-off catch-up for releases saved before the workbook
+    if added:
+        print(f"Workbook catch-up: added {added} earlier release(s) to the Release Log.")
     res = run_job(store=store, archive=archive, listing_fn=fetch_listing, detail_fn=fetch_detail_html,
                   poster=poster, today=datetime.now(IST).date(), bootstrap_days=args.bootstrap_days,
-                  pause=1.0, save=not args.dry_run)
+                  pause=1.0, save=not args.dry_run, workbook=workbook, trigger=trigger)
     print(f"\nposted {res.posted}, baseline {res.baseline}, failed {res.failed}, "
           f"listing {'ok' if res.listing_ok else 'FAILED'}{' (dry run: nothing saved)' if args.dry_run else ''}")
     return 0 if res.ok else 1
@@ -104,9 +114,11 @@ def cmd_repost(args: argparse.Namespace) -> int:
     from .paths import DATA_DIR, INDEX_FILE, load_yaml
     from .store.archive import ReleaseArchive
     from .store.records import PressReleaseStore
+    from .store.workbook import Workbook
 
     store = PressReleaseStore.load(INDEX_FILE)
     archive = ReleaseArchive(DATA_DIR / "releases")
+    workbook = Workbook(DATA_DIR / "RBI_Tracker.xlsx", dry_run=args.dry_run)
     if args.list:
         for r in sorted(store.records.values(), key=lambda r: (r["release_date"], int(r["prid"]))):
             print(f"{r['prid']:>6}  {r['release_date']}  {r['item_id']:<20} {r.get('status', 'new'):<15} {r['title'][:55]}")
@@ -144,8 +156,31 @@ def cmd_repost(args: argparse.Namespace) -> int:
             print(f"{prid}: FAILED - {e}", file=sys.stderr)
             failures += 1
             continue
+        if not args.dry_run:
+            workbook.log_notification("repost", "manual", text, labels.get(rec["item_id"], rec["item_id"]),
+                                      rec["item_id"], release.release_date, prid)
         print(f"{prid}: {'previewed' if args.dry_run else 'reposted'} ({rec['item_id']}, {rec['release_date']})")
+    workbook.save()
     return 1 if failures else 0
+
+
+def cmd_sync_workbook(args: argparse.Namespace) -> int:
+    """Add releases the job already processed (before the workbook existed) to the Release Log and,
+    for ones that were posted, the Change Log. Never duplicates; never touches existing rows.
+    The Chat Notification Log is not backfilled: exact posting times were not recorded."""
+    from .job import sync_workbook
+    from .paths import DATA_DIR, INDEX_FILE
+    from .store.archive import ReleaseArchive
+    from .store.records import PressReleaseStore
+    from .store.workbook import Workbook
+
+    store = PressReleaseStore.load(INDEX_FILE)
+    archive = ReleaseArchive(DATA_DIR / "releases")
+    workbook = Workbook(DATA_DIR / "RBI_Tracker.xlsx", dry_run=args.dry_run)
+    added, changes = sync_workbook(store, archive, workbook)
+    workbook.save()
+    print(f"Added {added} release(s) and {changes} change row(s)" + (" (dry run: nothing saved)" if args.dry_run else "."))
+    return 0
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -171,6 +206,9 @@ def main(argv: list[str] | None = None) -> int:
     rp.add_argument("--list", action="store_true", help="list the releases saved so far, with their ids")
     rp.add_argument("--dry-run", action="store_true", help="print the messages instead of posting")
     rp.set_defaults(func=cmd_repost)
+    sw = sub.add_parser("sync-workbook", help="add already-processed releases to the Excel workbook")
+    sw.add_argument("--dry-run", action="store_true", help="show what would be added; save nothing")
+    sw.set_defaults(func=cmd_sync_workbook)
     args = p.parse_args(argv)
     return args.func(args)
 

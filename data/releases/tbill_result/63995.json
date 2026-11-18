@@ -1,0 +1,79 @@
+{
+ "prid": "63995",
+ "release": {
+  "item_id": "tbill_result",
+  "release_date": "2026-11-18",
+  "reference": "Press Release: 2026-2027/1517",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63995",
+  "fields": {},
+  "rows": [
+   {
+    "key": "91D",
+    "security": "91-Day",
+    "notified_amount": 8000.0,
+    "bids_received_number": 152.0,
+    "bids_received_amount": 25216.18,
+    "accepted_number": 71.0,
+    "accepted_amount": 7600.0,
+    "noncomp_received_amount": 9773.425,
+    "noncomp_accepted_amount": 9743.22,
+    "total_allotment_amount": 17343.22,
+    "cutoff_price": 98.56,
+    "cutoff_yield": 5.8602,
+    "wtd_avg_price": 98.563,
+    "wtd_avg_yield": 5.8478,
+    "devolvement_amount": null,
+    "bid_cover": 3.15,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "182D",
+    "security": "182-Day",
+    "notified_amount": 8000.0,
+    "bids_received_number": 127.0,
+    "bids_received_amount": 26523.5,
+    "accepted_number": 56.0,
+    "accepted_amount": 7600.0,
+    "noncomp_received_amount": 1048.316,
+    "noncomp_accepted_amount": 1000.0,
+    "total_allotment_amount": 8600.0,
+    "cutoff_price": 96.8466,
+    "cutoff_yield": 6.53,
+    "wtd_avg_price": 96.8514,
+    "wtd_avg_yield": 6.5198,
+    "devolvement_amount": null,
+    "bid_cover": 3.32,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "364D",
+    "security": "364-Day",
+    "notified_amount": 7000.0,
+    "bids_received_number": 163.0,
+    "bids_received_amount": 25170.5,
+    "accepted_number": 64.0,
+    "accepted_amount": 6650.0,
+    "noncomp_received_amount": 1101.17,
+    "noncomp_accepted_amount": 950.0,
+    "total_allotment_amount": 7600.0,
+    "cutoff_price": 93.7982,
+    "cutoff_yield": 6.63,
+    "wtd_avg_price": 93.8135,
+    "wtd_avg_yield": 6.6126,
+    "devolvement_amount": null,
+    "bid_cover": 3.6,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

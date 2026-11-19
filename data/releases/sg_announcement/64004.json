@@ -1,0 +1,190 @@
+{
+ "prid": "64004",
+ "release": {
+  "item_id": "sg_announcement",
+  "release_date": "2026-11-19",
+  "reference": "Press Release: 2026-2027/1526",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64004",
+  "fields": {
+   "total_notified_amount": 31950.0,
+   "detail": [
+    {
+     "state": "Assam",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.66% Assam SGS 2036, issued on June 17, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Bihar",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 8.18% Bihar SGS 2035, issued on October 28, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Bihar",
+     "amount": 2000.0,
+     "tenor": "Re-issue of 7.84% Bihar SGS 2041, issued on May 27, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Chhattisgarh",
+     "amount": 900.0,
+     "tenor": "Re-issue of 7.88% Chhattisgarh SGS 2038, issued on September 16, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Chhattisgarh",
+     "amount": 600.0,
+     "tenor": "Re-issue of 7.99% Chhattisgarh SGS 2047, issued on September 16, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Gujarat",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.82% Gujarat SGS 2036, issued on November 11, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Gujarat",
+     "amount": 1500.0,
+     "tenor": "Re-issue of 7.97% Gujarat SGS 2039, issued on November 11, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Haryana",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.56% Haryana SGS 2035, issued on August 27, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Haryana",
+     "amount": 1000.0,
+     "tenor": "17",
+     "type": "Yield"
+    },
+    {
+     "state": "Haryana",
+     "amount": 2000.0,
+     "tenor": "Re-issue of 7.92% Haryana SGS 2052, issued on September 16, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Jammu and Kashmir",
+     "amount": 800.0,
+     "tenor": "20",
+     "type": "Yield"
+    },
+    {
+     "state": "Jharkhand",
+     "amount": 100.0,
+     "tenor": "Re-issue of 7.72% Jharkhand SGS 2038, issued on September 02, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Jharkhand",
+     "amount": 100.0,
+     "tenor": "Re-issue of 7.72% Jharkhand SGS 2042, issued on September 02, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Karnataka",
+     "amount": 2000.0,
+     "tenor": "09",
+     "type": "Yield"
+    },
+    {
+     "state": "Keralam",
+     "amount": 1500.0,
+     "tenor": "14",
+     "type": "Yield"
+    },
+    {
+     "state": "Manipur",
+     "amount": 300.0,
+     "tenor": "Re-issue of 7.79% Manipur SGS 2042, issued on June 10, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Nagaland",
+     "amount": 450.0,
+     "tenor": "Re-issue of 8.07% Nagaland SGS 2041, issued on November 11, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Sikkim",
+     "amount": 200.0,
+     "tenor": "03",
+     "type": "Yield"
+    },
+    {
+     "state": "Sikkim",
+     "amount": 400.0,
+     "tenor": "Re-issue of 7.98% Sikkim SGS 2042, issued on September 30, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Tamil Nadu",
+     "amount": 2500.0,
+     "tenor": "10",
+     "type": "Yield"
+    },
+    {
+     "state": "Tamil Nadu",
+     "amount": 2500.0,
+     "tenor": "12",
+     "type": "Yield"
+    },
+    {
+     "state": "Tamil Nadu",
+     "amount": 3000.0,
+     "tenor": "16",
+     "type": "Yield"
+    },
+    {
+     "state": "Tamil Nadu",
+     "amount": 1500.0,
+     "tenor": "Re-issue of 8.21% Tamil Nadu SGS 2051, issued on October 14, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "amount": 500.0,
+     "tenor": "06",
+     "type": "Yield"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "amount": 1000.0,
+     "tenor": "Re-issue of 7.59% Uttar Pradesh SGS 2042, issued on July 08, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "amount": 2000.0,
+     "tenor": "Re-issue of 7.95% Uttar Pradesh SGS 2051, issued on September 30, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Uttarakhand",
+     "amount": 500.0,
+     "tenor": "Re-issue of 7.64% Uttarakhand SGS 2038, issued on August 05, 2026",
+     "type": "Price"
+    },
+    {
+     "state": "Uttarakhand",
+     "amount": 600.0,
+     "tenor": "Re-issue of 7.87% Uttarakhand SGS 2044, issued on May 27, 2026",
+     "type": "Price"
+    }
+   ]
+  },
+  "rows": [
+   {
+    "key": "ALL",
+    "security": "All State Government securities",
+    "notified_amount": 31950.0
+   }
+  ],
+  "prior_year": {}
+ }
+}

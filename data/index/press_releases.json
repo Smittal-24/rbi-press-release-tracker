@@ -313,6 +313,90 @@
    "status": "posted",
    "posted_at": "2026-11-20T00:22:07+05:30",
    "posted_on": "2026-11-20"
+  },
+  "64007": {
+   "prid": "64007",
+   "release_date": "2026-11-20",
+   "title": "Result of the 3-day Variable Rate Repo (VRR) auction held on November 20, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64007",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR152997B5E9861C8843809DD34BC81454CFB3.PDF",
+   "item_id": "vrr_result",
+   "first_seen": "2026-11-20T18:17:24+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-20T23:47:26+05:30",
+   "posted_on": "2026-11-20"
+  },
+  "64008": {
+   "prid": "64008",
+   "release_date": "2026-11-20",
+   "title": "RBI to conduct Second 3-day Variable Rate Repo (VRR) auction under LAF on November 20, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64008",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR153068E0B1C30F574632A1072320EFEF0ADE.PDF",
+   "item_id": "vrr_announcement",
+   "first_seen": "2026-11-20T18:17:24+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-20T23:47:29+05:30",
+   "posted_on": "2026-11-20"
+  },
+  "64010": {
+   "prid": "64010",
+   "release_date": "2026-11-20",
+   "title": "Result of the Second 3-day Variable Rate Repo (VRR) auction held on November 20, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64010",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1532930D5B9F9EE5494489156D46DF25A932.PDF",
+   "item_id": "vrr_result",
+   "first_seen": "2026-11-20T18:17:24+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-20T23:47:32+05:30",
+   "posted_on": "2026-11-20"
+  },
+  "64012": {
+   "prid": "64012",
+   "release_date": "2026-11-20",
+   "title": "Government Stock - Full Auction Results",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64012",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1534EF9CF27727D249A19946B46FE2A9AFD2.PDF",
+   "item_id": "cg_result",
+   "first_seen": "2026-11-20T18:17:24+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-20T23:47:34+05:30",
+   "posted_on": "2026-11-20"
+  },
+  "64013": {
+   "prid": "64013",
+   "release_date": "2026-11-20",
+   "title": "Reserve Bank of India – Bulletin Weekly Statistical Supplement – Extract",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64013",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/HPR1525D737C9B08388459E8011026508C0A921.PDF",
+   "item_id": "wss",
+   "first_seen": "2026-11-20T18:17:24+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-20T23:47:37+05:30",
+   "posted_on": "2026-11-20"
+  },
+  "64014": {
+   "prid": "64014",
+   "release_date": "2026-11-20",
+   "title": "Auction of 91-Day, 182-Day and 364-Day Treasury Bills",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64014",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1536AE7F63B763084849A9E7CC3B75D9444D.PDF",
+   "item_id": "tbill_announcement",
+   "first_seen": "2026-11-20T18:17:24+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-20T23:47:40+05:30",
+   "posted_on": "2026-11-20"
+  },
+  "64016": {
+   "prid": "64016",
+   "release_date": "2026-11-20",
+   "title": "RBI to conduct 4-day Variable Rate Repo (VRR) auction under LAF on November 23, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64016",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1538703F61D08D424EA89B87DFB515227EB3.PDF",
+   "item_id": "vrr_announcement",
+   "first_seen": "2026-11-20T18:17:24+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-20T23:47:43+05:30",
+   "posted_on": "2026-11-20"
   }
  },
  "ignored": [
@@ -358,6 +442,12 @@
   "63998",
   "63999",
   "64001",
-  "64002"
+  "64002",
+  "64005",
+  "64006",
+  "64009",
+  "64011",
+  "64015",
+  "64017"
  ]
 }

@@ -1,0 +1,282 @@
+{
+ "prid": "64027",
+ "release": {
+  "item_id": "sg_result",
+  "release_date": "2026-11-23",
+  "reference": "Press Release: 2026-2027/1549",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64027",
+  "fields": {
+   "detail": [
+    {
+     "security": "ASSAM SGS 2036",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 1705.0,
+     "accepted_amount": 984.959,
+     "cutoff_yield": 7.9615,
+     "wtd_avg_yield": 7.9324,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "BIHAR SGS 2035*",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 1255.0,
+     "accepted_amount": 900.0,
+     "cutoff_yield": 7.939,
+     "wtd_avg_yield": 7.9014,
+     "total_allotment_amount": 941.919
+    },
+    {
+     "security": "BIHAR SGS 2041",
+     "notified_amount": 2000.0,
+     "bids_received_amount": 3645.0,
+     "accepted_amount": 1919.96,
+     "cutoff_yield": 8.0932,
+     "wtd_avg_yield": 8.0549,
+     "total_allotment_amount": 2000.0
+    },
+    {
+     "security": "CHHATTISGARH SGS 2038 @",
+     "notified_amount": 900.0,
+     "bids_received_amount": 2785.0,
+     "accepted_amount": null,
+     "cutoff_yield": null,
+     "wtd_avg_yield": null,
+     "total_allotment_amount": 0.0
+    },
+    {
+     "security": "CHHATTISGARH SGS 2047 @",
+     "notified_amount": 600.0,
+     "bids_received_amount": 1330.0,
+     "accepted_amount": null,
+     "cutoff_yield": null,
+     "wtd_avg_yield": null,
+     "total_allotment_amount": 0.0
+    },
+    {
+     "security": "GUJARAT SGS 2036",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 3710.0,
+     "accepted_amount": 979.595,
+     "cutoff_yield": 7.8603,
+     "wtd_avg_yield": 7.8441,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "GUJARAT SGS 2039",
+     "notified_amount": 1500.0,
+     "bids_received_amount": 5737.214,
+     "accepted_amount": 1438.965,
+     "cutoff_yield": 7.9806,
+     "wtd_avg_yield": 7.9631,
+     "total_allotment_amount": 1500.0
+    },
+    {
+     "security": "HARYANA SGS 2035",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 2475.0,
+     "accepted_amount": 994.831,
+     "cutoff_yield": 7.9492,
+     "wtd_avg_yield": 7.9035,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "HARYANA SGS 2043",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 2845.0,
+     "accepted_amount": 900.0,
+     "cutoff_yield": 8.05,
+     "wtd_avg_yield": 8.0479,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "HARYANA SGS 2052",
+     "notified_amount": 2000.0,
+     "bids_received_amount": 5420.0,
+     "accepted_amount": 1979.104,
+     "cutoff_yield": 8.0451,
+     "wtd_avg_yield": 8.0376,
+     "total_allotment_amount": 2000.0
+    },
+    {
+     "security": "JAMMU AND KASHMIR SGS 2046",
+     "notified_amount": 800.0,
+     "bids_received_amount": 2315.0,
+     "accepted_amount": 760.95,
+     "cutoff_yield": 8.05,
+     "wtd_avg_yield": 8.0457,
+     "total_allotment_amount": 800.0
+    },
+    {
+     "security": "JHARKHAND SGS 2038 $",
+     "notified_amount": 100.0,
+     "bids_received_amount": 685.0,
+     "accepted_amount": null,
+     "cutoff_yield": null,
+     "wtd_avg_yield": null,
+     "total_allotment_amount": 0.0
+    },
+    {
+     "security": "JHARKHAND SGS 2042 $",
+     "notified_amount": 100.0,
+     "bids_received_amount": 500.0,
+     "accepted_amount": null,
+     "cutoff_yield": null,
+     "wtd_avg_yield": null,
+     "total_allotment_amount": 0.0
+    },
+    {
+     "security": "KARNATAKA SGS 2035",
+     "notified_amount": 2000.0,
+     "bids_received_amount": 5000.0,
+     "accepted_amount": 1944.217,
+     "cutoff_yield": 7.89,
+     "wtd_avg_yield": 7.8618,
+     "total_allotment_amount": 2000.0
+    },
+    {
+     "security": "KERALA SGS 2040",
+     "notified_amount": 1500.0,
+     "bids_received_amount": 4865.0,
+     "accepted_amount": 1368.675,
+     "cutoff_yield": 8.07,
+     "wtd_avg_yield": 8.0497,
+     "total_allotment_amount": 1500.0
+    },
+    {
+     "security": "MANIPUR SGS 2042",
+     "notified_amount": 300.0,
+     "bids_received_amount": 1155.0,
+     "accepted_amount": 296.975,
+     "cutoff_yield": 8.049,
+     "wtd_avg_yield": 8.049,
+     "total_allotment_amount": 300.0
+    },
+    {
+     "security": "NAGALAND SGS 2041",
+     "notified_amount": 450.0,
+     "bids_received_amount": 1415.0,
+     "accepted_amount": 449.918,
+     "cutoff_yield": 8.0484,
+     "wtd_avg_yield": 8.0484,
+     "total_allotment_amount": 450.0
+    },
+    {
+     "security": "SIKKIM SGS 2029",
+     "notified_amount": 200.0,
+     "bids_received_amount": 1425.0,
+     "accepted_amount": 197.807,
+     "cutoff_yield": 7.51,
+     "wtd_avg_yield": 7.4989,
+     "total_allotment_amount": 200.0
+    },
+    {
+     "security": "SIKKIM SGS 2042",
+     "notified_amount": 400.0,
+     "bids_received_amount": 1300.0,
+     "accepted_amount": 383.964,
+     "cutoff_yield": 8.0582,
+     "wtd_avg_yield": 8.0571,
+     "total_allotment_amount": 400.0
+    },
+    {
+     "security": "TAMILNADU SGS 2036",
+     "notified_amount": 2500.0,
+     "bids_received_amount": 4260.0,
+     "accepted_amount": 2421.944,
+     "cutoff_yield": 7.93,
+     "wtd_avg_yield": 7.9005,
+     "total_allotment_amount": 2500.0
+    },
+    {
+     "security": "TAMILNADU SGS 2038",
+     "notified_amount": 2500.0,
+     "bids_received_amount": 8940.0,
+     "accepted_amount": 2418.606,
+     "cutoff_yield": 8.0,
+     "wtd_avg_yield": 7.9799,
+     "total_allotment_amount": 2500.0
+    },
+    {
+     "security": "TAMILNADU SGS 2042",
+     "notified_amount": 3000.0,
+     "bids_received_amount": 7148.0,
+     "accepted_amount": 2709.747,
+     "cutoff_yield": 8.07,
+     "wtd_avg_yield": 8.0443,
+     "total_allotment_amount": 3000.0
+    },
+    {
+     "security": "TAMILNADU SGS 2051",
+     "notified_amount": 1500.0,
+     "bids_received_amount": 3890.0,
+     "accepted_amount": 1429.636,
+     "cutoff_yield": 8.0467,
+     "wtd_avg_yield": 8.0393,
+     "total_allotment_amount": 1500.0
+    },
+    {
+     "security": "UTTAR PRADESH SGS 2032",
+     "notified_amount": 500.0,
+     "bids_received_amount": 1965.0,
+     "accepted_amount": 492.928,
+     "cutoff_yield": 7.75,
+     "wtd_avg_yield": 7.7318,
+     "total_allotment_amount": 500.0
+    },
+    {
+     "security": "UTTAR PRADESH SGS 2042",
+     "notified_amount": 1000.0,
+     "bids_received_amount": 2685.0,
+     "accepted_amount": 952.832,
+     "cutoff_yield": 8.0486,
+     "wtd_avg_yield": 8.0392,
+     "total_allotment_amount": 1000.0
+    },
+    {
+     "security": "UTTAR PRADESH SGS 2051",
+     "notified_amount": 2000.0,
+     "bids_received_amount": 5160.0,
+     "accepted_amount": 1901.837,
+     "cutoff_yield": 8.0487,
+     "wtd_avg_yield": 8.0421,
+     "total_allotment_amount": 2000.0
+    },
+    {
+     "security": "UTTARAKHAND SGS 2038 #",
+     "notified_amount": 500.0,
+     "bids_received_amount": 1295.0,
+     "accepted_amount": 425.0,
+     "cutoff_yield": 8.0,
+     "wtd_avg_yield": 7.9797,
+     "total_allotment_amount": 425.03
+    },
+    {
+     "security": "UTTARAKHAND SGS 2044 #",
+     "notified_amount": 600.0,
+     "bids_received_amount": 2475.0,
+     "accepted_amount": 200.0,
+     "cutoff_yield": 8.0201,
+     "wtd_avg_yield": 8.0201,
+     "total_allotment_amount": 200.558
+    }
+   ]
+  },
+  "rows": [
+   {
+    "key": "ALL",
+    "security": "All State Government securities",
+    "notified_amount": 31950.0,
+    "bids_received_amount": 87385.214,
+    "accepted_amount": 28452.45,
+    "total_allotment_amount": 29717.507,
+    "cutoff_yield": 7.9998,
+    "bid_cover": 2.74,
+    "derived": [
+     "cutoff_yield",
+     "bid_cover"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

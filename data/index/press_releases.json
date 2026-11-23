@@ -397,6 +397,78 @@
    "status": "posted",
    "posted_at": "2026-11-20T23:47:43+05:30",
    "posted_on": "2026-11-20"
+  },
+  "64019": {
+   "prid": "64019",
+   "release_date": "2026-11-23",
+   "title": "RBI to conduct 2-day Variable Rate Repo (VRR) auction under LAF on November 23, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64019",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR15417764F25BDFD548358FFBFD4BC0E7B484.PDF",
+   "item_id": "vrr_announcement",
+   "first_seen": "2026-11-23T21:53:33+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-24T03:23:35+05:30",
+   "posted_on": "2026-11-24"
+  },
+  "64020": {
+   "prid": "64020",
+   "release_date": "2026-11-23",
+   "title": "Result of the 4-day Variable Rate Repo (VRR) auction held on November 23, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64020",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR154288E4EDF4D779475B89FDD32588AE7CC0.PDF",
+   "item_id": "vrr_result",
+   "first_seen": "2026-11-23T21:53:33+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-24T03:23:38+05:30",
+   "posted_on": "2026-11-24"
+  },
+  "64021": {
+   "prid": "64021",
+   "release_date": "2026-11-23",
+   "title": "Result of the 2-day Variable Rate Repo (VRR) auction held on November 23, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64021",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR15432EE7FE93DA0845C189673EDB395A4E8C.PDF",
+   "item_id": "vrr_result",
+   "first_seen": "2026-11-23T21:53:33+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-24T03:23:41+05:30",
+   "posted_on": "2026-11-24"
+  },
+  "64027": {
+   "prid": "64027",
+   "release_date": "2026-11-23",
+   "title": "State Government Securities - Full Auction Result",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64027",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1549B4B7BC37E19348DF879A85B4D7A18164.PDF",
+   "item_id": "sg_result",
+   "first_seen": "2026-11-23T21:53:33+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-24T03:23:44+05:30",
+   "posted_on": "2026-11-24"
+  },
+  "64029": {
+   "prid": "64029",
+   "release_date": "2026-11-23",
+   "title": "Auction of Government of India Dated Securities",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64029",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1551C42ECC50BDAA4D6299BCAFA765B67E78.PDF",
+   "item_id": "cg_announcement",
+   "first_seen": "2026-11-23T21:53:33+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-24T03:23:46+05:30",
+   "posted_on": "2026-11-24"
+  },
+  "64033": {
+   "prid": "64033",
+   "release_date": "2026-11-23",
+   "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on November 25, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64033",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR15552204BD479270468B846792291BE92BF1.PDF",
+   "item_id": "vrr_announcement",
+   "first_seen": "2026-11-23T21:53:33+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-24T03:23:49+05:30",
+   "posted_on": "2026-11-24"
   }
  },
  "ignored": [
@@ -448,6 +520,16 @@
   "64009",
   "64011",
   "64015",
-  "64017"
+  "64017",
+  "64018",
+  "64022",
+  "64023",
+  "64024",
+  "64025",
+  "64026",
+  "64028",
+  "64030",
+  "64031",
+  "64032"
  ]
 }

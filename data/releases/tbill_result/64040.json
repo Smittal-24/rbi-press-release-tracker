@@ -1,0 +1,79 @@
+{
+ "prid": "64040",
+ "release": {
+  "item_id": "tbill_result",
+  "release_date": "2026-11-25",
+  "reference": "Press Release: 2026-2027/1562",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64040",
+  "fields": {},
+  "rows": [
+   {
+    "key": "91D",
+    "security": "91-Day",
+    "notified_amount": 8000.0,
+    "bids_received_number": 93.0,
+    "bids_received_amount": 17354.75,
+    "accepted_number": 35.0,
+    "accepted_amount": 4329.75,
+    "noncomp_received_amount": 12314.804,
+    "noncomp_accepted_amount": 12300.0,
+    "total_allotment_amount": 16629.75,
+    "cutoff_price": 98.5541,
+    "cutoff_yield": 5.8846,
+    "wtd_avg_price": 98.5573,
+    "wtd_avg_yield": 5.8714,
+    "devolvement_amount": null,
+    "bid_cover": 2.17,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "182D",
+    "security": "182-Day",
+    "notified_amount": 8000.0,
+    "bids_received_number": 87.0,
+    "bids_received_amount": 23728.75,
+    "accepted_number": 16.0,
+    "accepted_amount": 7600.0,
+    "noncomp_received_amount": 418.615,
+    "noncomp_accepted_amount": 400.0,
+    "total_allotment_amount": 8000.0,
+    "cutoff_price": 96.8472,
+    "cutoff_yield": 6.5288,
+    "wtd_avg_price": 96.8503,
+    "wtd_avg_yield": 6.5221,
+    "devolvement_amount": null,
+    "bid_cover": 2.97,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "364D",
+    "security": "364-Day",
+    "notified_amount": 7000.0,
+    "bids_received_number": 135.0,
+    "bids_received_amount": 21835.0,
+    "accepted_number": 45.0,
+    "accepted_amount": 6650.0,
+    "noncomp_received_amount": 700.887,
+    "noncomp_accepted_amount": 620.0,
+    "total_allotment_amount": 7270.0,
+    "cutoff_price": 93.7906,
+    "cutoff_yield": 6.6387,
+    "wtd_avg_price": 93.7987,
+    "wtd_avg_yield": 6.6294,
+    "devolvement_amount": null,
+    "bid_cover": 3.12,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

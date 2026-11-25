@@ -1,0 +1,21 @@
+{
+ "prid": "64037",
+ "release": {
+  "item_id": "vrr_announcement",
+  "release_date": "2026-11-25",
+  "reference": "Press Release: 2026-2027/1559",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64037",
+  "fields": {
+   "operation_date": "2026-11-25"
+  },
+  "rows": [
+   {
+    "key": "1D",
+    "notified_amount": 50000.0,
+    "window": "11:45 AM to 12:15 PM",
+    "reversal_date": "2026-11-26"
+   }
+  ],
+  "prior_year": {}
+ }
+}

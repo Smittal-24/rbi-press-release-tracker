@@ -529,6 +529,54 @@
    "status": "posted",
    "posted_at": "2026-11-26T01:15:41+05:30",
    "posted_on": "2026-11-26"
+  },
+  "64045": {
+   "prid": "64045",
+   "release_date": "2026-11-26",
+   "title": "Result of the Overnight Variable Rate Repo (VRR) auction held on November 26, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64045",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1567DEF31AB39D6F4E5EB9D7B3330A698AE9.PDF",
+   "item_id": "vrr_result",
+   "first_seen": "2026-11-26T19:25:05+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-27T00:55:08+05:30",
+   "posted_on": "2026-11-27"
+  },
+  "64046": {
+   "prid": "64046",
+   "release_date": "2026-11-26",
+   "title": "RBI to conduct Second Overnight Variable Rate Repo (VRR) auction under LAF on November 26, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64046",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR156851D5828E66D541858138B488ABFFDD56.PDF",
+   "item_id": "vrr_announcement",
+   "first_seen": "2026-11-26T19:25:05+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-27T00:55:10+05:30",
+   "posted_on": "2026-11-27"
+  },
+  "64047": {
+   "prid": "64047",
+   "release_date": "2026-11-26",
+   "title": "Result of the Second Overnight Variable Rate Repo (VRR) auction held on November 26, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64047",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1569E5DC933EDE9346C9AF92F47357312E39.PDF",
+   "item_id": "vrr_result",
+   "first_seen": "2026-11-26T19:25:05+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-27T00:55:13+05:30",
+   "posted_on": "2026-11-27"
+  },
+  "64051": {
+   "prid": "64051",
+   "release_date": "2026-11-26",
+   "title": "RBI to conduct 3-day Variable Rate Repo (VRR) auction under LAF on November 27, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64051",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1573790D6F6BBA6D4399ABD4568B33DA9A8E.PDF",
+   "item_id": "vrr_announcement",
+   "first_seen": "2026-11-26T19:25:05+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-27T00:55:16+05:30",
+   "posted_on": "2026-11-27"
   }
  },
  "ignored": [
@@ -595,6 +643,10 @@
   "64036",
   "64039",
   "64041",
-  "64042"
+  "64042",
+  "64044",
+  "64048",
+  "64049",
+  "64050"
  ]
 }

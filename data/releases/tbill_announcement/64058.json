@@ -1,0 +1,32 @@
+{
+ "prid": "64058",
+ "release": {
+  "item_id": "tbill_announcement",
+  "release_date": "2026-11-27",
+  "reference": "Press Release: 2026-2027/1580",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64058",
+  "fields": {
+   "auction_date": "2026-12-02",
+   "settlement_date": "2026-12-03",
+   "total_notified_amount": 23000.0
+  },
+  "rows": [
+   {
+    "key": "91D",
+    "security": "91-Day",
+    "notified_amount": 8000.0
+   },
+   {
+    "key": "182D",
+    "security": "182-Day",
+    "notified_amount": 8000.0
+   },
+   {
+    "key": "364D",
+    "security": "364-Day",
+    "notified_amount": 7000.0
+   }
+  ],
+  "prior_year": {}
+ }
+}

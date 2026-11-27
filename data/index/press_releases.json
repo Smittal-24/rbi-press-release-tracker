@@ -577,6 +577,78 @@
    "status": "posted",
    "posted_at": "2026-11-27T00:55:16+05:30",
    "posted_on": "2026-11-27"
+  },
+  "64054": {
+   "prid": "64054",
+   "release_date": "2026-11-27",
+   "title": "Result of the 3-day Variable Rate Repo (VRR) auction held on November 27, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64054",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1576DFAC8C0E289F435ABC567E0375B950AE.PDF",
+   "item_id": "vrr_result",
+   "first_seen": "2026-11-27T19:21:03+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-28T00:51:05+05:30",
+   "posted_on": "2026-11-28"
+  },
+  "64056": {
+   "prid": "64056",
+   "release_date": "2026-11-27",
+   "title": "Government Stock - Full Auction Results",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64056",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1578D285E8E2C39D480A888D7017F355C45B.PDF",
+   "item_id": "cg_result",
+   "first_seen": "2026-11-27T19:21:03+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-28T00:51:08+05:30",
+   "posted_on": "2026-11-28"
+  },
+  "64057": {
+   "prid": "64057",
+   "release_date": "2026-11-27",
+   "title": "Reserve Bank of India – Bulletin Weekly Statistical Supplement – Extract",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64057",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1579WSSC52BA5CE3F774F2BA07112A933DA2815.PDF",
+   "item_id": "wss",
+   "first_seen": "2026-11-27T19:21:03+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-28T00:51:10+05:30",
+   "posted_on": "2026-11-28"
+  },
+  "64058": {
+   "prid": "64058",
+   "release_date": "2026-11-27",
+   "title": "Auction of 91-Day, 182-Day and 364-Day Treasury Bills",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64058",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1580F430581D218D45BE8EF4DAC0A296029A.PDF",
+   "item_id": "tbill_announcement",
+   "first_seen": "2026-11-27T19:21:03+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-28T00:51:13+05:30",
+   "posted_on": "2026-11-28"
+  },
+  "64060": {
+   "prid": "64060",
+   "release_date": "2026-11-27",
+   "title": "Auction of State Government Securities",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64060",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR15820584FEFA1FA54EA2B0600D124C298A38.PDF",
+   "item_id": "sg_announcement",
+   "first_seen": "2026-11-27T19:21:03+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-28T00:51:15+05:30",
+   "posted_on": "2026-11-28"
+  },
+  "64061": {
+   "prid": "64061",
+   "release_date": "2026-11-27",
+   "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on November 30, 2026",
+   "detail_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64061",
+   "pdf_url": "https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR1583A2DA604230884AAA98A0AA5597EB4A74.PDF",
+   "item_id": "vrr_announcement",
+   "first_seen": "2026-11-27T19:21:03+00:00",
+   "status": "posted",
+   "posted_at": "2026-11-28T00:51:18+05:30",
+   "posted_on": "2026-11-28"
   }
  },
  "ignored": [
@@ -647,6 +719,11 @@
   "64044",
   "64048",
   "64049",
-  "64050"
+  "64050",
+  "64052",
+  "64053",
+  "64055",
+  "64059",
+  "64062"
  ]
 }

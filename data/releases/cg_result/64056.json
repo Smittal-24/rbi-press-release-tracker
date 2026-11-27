@@ -1,0 +1,105 @@
+{
+ "prid": "64056",
+ "release": {
+  "item_id": "cg_result",
+  "release_date": "2026-11-27",
+  "reference": "Press Release: 2026-2027/1578",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64056",
+  "fields": {},
+  "rows": [
+   {
+    "key": "3Y",
+    "security": "6.20% GS 2029",
+    "bucket_approx": false,
+    "notified_amount": 9000.0,
+    "bids_received_number": 85.0,
+    "bids_received_amount": 13785.2,
+    "accepted_number": 16.0,
+    "accepted_amount": 3670.2,
+    "noncomp_received_amount": 7.295,
+    "noncomp_accepted_amount": 7.295,
+    "total_allotment_amount": 3677.495,
+    "cutoff_price": 98.05,
+    "cutoff_yield": 6.996,
+    "wtd_avg_price": 98.08,
+    "wtd_avg_yield": 6.9835,
+    "devolvement_amount": 0.0,
+    "bid_cover": 1.53,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "7Y",
+    "security": "6.57% GS 2033",
+    "bucket_approx": false,
+    "notified_amount": 12000.0,
+    "bids_received_number": 160.0,
+    "bids_received_amount": 22948.2,
+    "accepted_number": 98.0,
+    "accepted_amount": 11996.076,
+    "noncomp_received_amount": 3.924,
+    "noncomp_accepted_amount": 3.924,
+    "total_allotment_amount": 12000.0,
+    "cutoff_price": 96.3,
+    "cutoff_yield": 7.2736,
+    "wtd_avg_price": 96.35,
+    "wtd_avg_yield": 7.2638,
+    "devolvement_amount": 0.0,
+    "bid_cover": 1.91,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "30Y",
+    "security": "7.63% GS 2056",
+    "bucket_approx": false,
+    "notified_amount": 9000.0,
+    "bids_received_number": 192.0,
+    "bids_received_amount": 23095.0,
+    "accepted_number": 99.0,
+    "accepted_amount": 8962.836,
+    "noncomp_received_amount": 37.164,
+    "noncomp_accepted_amount": 37.164,
+    "total_allotment_amount": 9000.0,
+    "cutoff_price": 98.03,
+    "cutoff_yield": 7.7996,
+    "wtd_avg_price": 98.12,
+    "wtd_avg_yield": 7.7917,
+    "devolvement_amount": 0.0,
+    "bid_cover": 2.57,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   },
+   {
+    "key": "29Y",
+    "security": "7.50% GOI SGrB 2056",
+    "bucket_approx": false,
+    "notified_amount": 3000.0,
+    "bids_received_number": 65.0,
+    "bids_received_amount": 8723.0,
+    "accepted_number": 21.0,
+    "accepted_amount": 2996.335,
+    "noncomp_received_amount": 3.665,
+    "noncomp_accepted_amount": 3.665,
+    "total_allotment_amount": 3000.0,
+    "cutoff_price": 96.86,
+    "cutoff_yield": 7.7721,
+    "wtd_avg_price": 96.99,
+    "wtd_avg_yield": 7.7605,
+    "devolvement_amount": 0.0,
+    "bid_cover": 2.91,
+    "derived": [
+     "bid_cover",
+     "total_allotment_amount"
+    ]
+   }
+  ],
+  "prior_year": {}
+ }
+}

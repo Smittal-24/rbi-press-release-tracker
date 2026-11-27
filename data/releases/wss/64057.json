@@ -1,0 +1,33 @@
+{
+ "prid": "64057",
+ "release": {
+  "item_id": "wss",
+  "release_date": "2026-11-27",
+  "reference": "Press Release: 2026-2027/1579",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64057",
+  "fields": {
+   "rbi_loans_to_state_govts": 19965.0,
+   "forex_reserves_total_inr_cr": 6497956.0,
+   "forex_reserves_total_usd_mn": 700898.0,
+   "forex_fca_usd_mn": 583186.0,
+   "forex_gold_usd_mn": 94519.0,
+   "forex_sdrs_usd_mn": 18451.0,
+   "forex_imf_position_usd_mn": 4743.0,
+   "forex_as_on": "2026-11-20",
+   "aggregate_deposits": 28046926.0,
+   "aggregate_deposits_yoy_pct": 16.4,
+   "demand_deposits": 3353329.0,
+   "time_deposits": 24693597.0,
+   "bank_credit": 23111541.0,
+   "bank_credit_yoy_pct": 19.3,
+   "non_food_credit": 22974751.0,
+   "scb_as_on": "2026-11-15",
+   "m3": 33644451.0,
+   "m3_yoy_pct": 16.2,
+   "currency_with_public": 4346732.0,
+   "currency_with_public_yoy_pct": 15.9
+  },
+  "rows": [],
+  "prior_year": {}
+ }
+}

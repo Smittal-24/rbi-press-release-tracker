@@ -1,0 +1,91 @@
+{
+ "prid": "64060",
+ "release": {
+  "item_id": "sg_announcement",
+  "release_date": "2026-11-27",
+  "reference": "Press Release: 2026-2027/1582",
+  "source_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=64060",
+  "fields": {
+   "total_notified_amount": 21200.0,
+   "detail": [
+    {
+     "state": "Andhra Pradesh",
+     "amount": 1000.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.51% SGS 2036, issued on July 15, 2026"
+    },
+    {
+     "state": "Delhi",
+     "amount": 500.0,
+     "tenor": "-",
+     "type": "09"
+    },
+    {
+     "state": "Goa",
+     "amount": 100.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.63% Goa SGS 2036, issued on September 09, 2026"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "amount": 400.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.78% Himachal Pradesh SGS 2044, issued on June 24, 2026"
+    },
+    {
+     "state": "Karnataka",
+     "amount": 2000.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.68% Karnataka SGS 2037, issued on March 25, 2026"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "amount": 500.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.91% Madhya Pradesh SGS 2036, issued on October 07, 2026"
+    },
+    {
+     "state": "Maharashtra",
+     "amount": 1000.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.09% Maharashtra SGS 2031, issued on August 27, 2026"
+    },
+    {
+     "state": "Punjab",
+     "amount": 500.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.54% Punjab SGS 2031, issued on September 23, 2026"
+    },
+    {
+     "state": "Rajasthan",
+     "amount": 500.0,
+     "tenor": "-",
+     "type": "Re-issue of 8.04% Rajasthan SGS 2037, issued on November 04, 2026"
+    },
+    {
+     "state": "Telangana",
+     "amount": 1000.0,
+     "tenor": "-",
+     "type": "Re-issue of 8.17% Telangana SGS 2046, issued on November 04, 2026"
+    },
+    {
+     "state": "West Bengal",
+     "amount": 500.0,
+     "tenor": "-",
+     "type": "Re-issue of 7.58% West Bengal SGS 2035, issued on July 22, 2026"
+    }
+   ],
+   "needs_review": [
+    "state amounts add up to 8000 but the page states 21200"
+   ]
+  },
+  "rows": [
+   {
+    "key": "ALL",
+    "security": "All State Government securities",
+    "notified_amount": 21200.0
+   }
+  ],
+  "prior_year": {}
+ }
+}
